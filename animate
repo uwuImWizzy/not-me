@@ -307,51 +307,52 @@ nav.wrapper-1_HaEi.guilds-2JjMmN {
 
 /* Status colors */
 :root {
+    --streaming-color: #8483ce;
     --online-color: #4cb884;
     --idle-color: #facc4c;
     --dnd-color: #d66b61;
     --offline-color: #787878;
-    --streaming-color: #8483ce;
+
 }
 /* Status Picker thing */
 #app-mount #status-picker #status-picker-online:not(.focused-3qFvc8) .status-2DiCMd {
-    background-color: var(--online-color) !important;
+    fill: var(--online-color);
 }
 #app-mount #status-picker #status-picker-idle:not(.focused-3qFvc8) .status-2DiCMd {
-    background-color: var(--idle-color) !important;
+    fill: var(--idle-color);
 }
 #app-mount #status-picker #status-picker-dnd:not(.focused-3qFvc8) .status-2DiCMd {
-    background-color: var(--dnd-color) !important;
+    fill: var(--dnd-color);
 }
 #app-mount #status-picker #status-picker-invisible:not(.focused-3qFvc8) .status-2DiCMd {
-    background-color: var(--offline-color) !important;
+    fill: var(--offline-color);
 }
 /* Status Colors */
-#app-mount .wrapper-1VLyxH rect[fill="hsl(262, calc(var(--saturation-factor, 1) * 46.8%), 39.8%)"],
+
 #app-mount .wrapper-1VLyxH rect :not(.pointerEvents-9SZWKj)[mask="url(#svg-mask-status-streaming)"] {fill: var(--streaming-color)}
-#app-mount .wrapper-1VLyxH rect[fill="hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%)"],
+
 #app-mount .wrapper-1VLyxH rect :not(.pointerEvents-9SZWKj)[mask="url(#svg-mask-status-online)"],
 #app-mount .wrapper-1VLyxH rect :not(.pointerEvents-9SZWKj)[mask="url(#svg-mask-status-online-mobile)"] {fill: var(--online-color)}
-#app-mount .wrapper-1VLyxH rect[fill="hsl(38, calc(var(--saturation-factor, 1) * 95.7%), 54.1%)"],
+
 #app-mount .wrapper-1VLyxH rect :not(.pointerEvents-9SZWKj)[mask="url(#svg-mask-status-idle)"] {fill: var(--idle-color)}
-#app-mount .wrapper-1VLyxH rect[fill="hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%)"],
+
 #app-mount .wrapper-1VLyxH rect :not(.pointerEvents-9SZWKj)[mask="url(#svg-mask-status-dnd)"] {fill: var(--dnd-color)}
-#app-mount .wrapper-1VLyxH rect[fill="hsl(214, calc(var(--saturation-factor, 1) * 9.9%), 50.4%)"],
+
 #app-mount .wrapper-1VLyxH rect[mask="url(#svg-mask-status-offline)"] {fill: var(--offline-color)}
 
-.container-ZMc96U [fill="hsl(262, calc(var(--saturation-factor, 1) * 46.8%), 39.8%)"] {
+.container-ZMc96U {
   fill: var(--streaming-color);
 }
-.container-ZMc96U [fill="hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%)"] {
+.container-ZMc96U {
   fill: var(--online-color);
 }
-.container-ZMc96U [fill="hsl(38, calc(var(--saturation-factor, 1) * 95.7%), 54.1%)"] {
+.container-ZMc96U {
   fill: var(--idle-color);
 }
-.container-ZMc96U [fill="hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%)"] {
+.container-ZMc96U {
   fill: var(--dnd-color);
 }
-.container-ZMc96U [fill="hsl(214, calc(var(--saturation-factor, 1) * 9.9%), 50.4%)"] {
+.container-ZMc96U {
   fill: var(--offline-color);
 }
 
